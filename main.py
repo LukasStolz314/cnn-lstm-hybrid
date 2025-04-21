@@ -113,7 +113,7 @@ if __name__ == "__main__":
                 'model_state_dict': model.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
                 'loss': loss,
-            }, 'checkpoint_last_epoch.pth')  
+            }, f'checkpoint_epoch_{epoch}.pth')  
 
             epoch_logs.append({
                 "epoch": epoch + 1,
