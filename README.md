@@ -1,4 +1,4 @@
-﻿This repository implements a word-level lip reading approach using a CNN-LSTM architecture. The model and proprocessing pipeline are designed for the German Lip Reading Dataset (GLips). The model aims to classify short video sequences of spoken german words.
+﻿This repository implements a word-level lip reading approach using a CNN-LSTM architecture. The model and preprocessing pipeline are designed for the German Lip Reading Dataset (GLips). The model aims to classify short video sequences of spoken german words.
 
  ## Usage
  
