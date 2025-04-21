@@ -1,9 +1,10 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from settings import corpus
 
 class Conv3DModel(nn.Module):
-    def __init__(self, num_classes=50):
+    def __init__(self, num_classes=len(corpus)):
         super(Conv3DModel, self).__init__()
 
         self.conv1 = nn.Conv3d(3, 64, kernel_size=(5, 3, 3), padding=1)

@@ -71,7 +71,6 @@ if __name__ == "__main__":
     mean = stats['mean']
     std = stats['std']
     
-    batch_size = 16
     train_dataset = LipReadingDataset(train_paths, y_train, mean=mean, std=std)
     test_dataset = LipReadingDataset(test_paths, y_test, mean=mean, std=std)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4, prefetch_factor=2)
@@ -80,7 +79,6 @@ if __name__ == "__main__":
     print(f'Train len: {len(train_dataset)}')    
 
     def train():
-        epochs = 30
         epoch_logs = []
         for epoch in range(start_epoch, epochs):
             start = time.time()
